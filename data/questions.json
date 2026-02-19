@@ -1,0 +1,158 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "朝起きて最初にしたいことは？",
+      "choices": [
+        {
+          "text": "カーテンを開けて深呼吸",
+          "scores": { "morning-switch": 3, "stroll-refresher": 2, "fruit-flash": 1 }
+        },
+        {
+          "text": "布団の中でもう少しゴロゴロ",
+          "scores": { "sweet-afterglow": 3, "balance-master": 2, "night-thinker": 1 }
+        },
+        {
+          "text": "好きな音楽をかける",
+          "scores": { "aroma-explorer": 3, "fruit-flash": 2, "stroll-refresher": 1 }
+        },
+        {
+          "text": "今日のTo-Doを確認する",
+          "scores": { "morning-switch": 2, "bitter-reward": 3, "balance-master": 1 }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "休日の過ごし方で、一番ワクワクするのは？",
+      "choices": [
+        {
+          "text": "知らない街を散歩",
+          "scores": { "stroll-refresher": 3, "aroma-explorer": 2, "fruit-flash": 1 }
+        },
+        {
+          "text": "お気に入りのカフェでまったり",
+          "scores": { "sweet-afterglow": 3, "balance-master": 2, "night-thinker": 1 }
+        },
+        {
+          "text": "美術館や展示会巡り",
+          "scores": { "aroma-explorer": 3, "fruit-flash": 2, "night-thinker": 1 }
+        },
+        {
+          "text": "友達とアクティブに遊ぶ",
+          "scores": { "morning-switch": 3, "bitter-reward": 1, "stroll-refresher": 2 }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "コーヒーと一緒に食べたいのは？",
+      "choices": [
+        {
+          "text": "フルーツタルト",
+          "scores": { "fruit-flash": 3, "sweet-afterglow": 2, "aroma-explorer": 1 }
+        },
+        {
+          "text": "チョコレートケーキ",
+          "scores": { "bitter-reward": 3, "night-thinker": 2, "sweet-afterglow": 1 }
+        },
+        {
+          "text": "バタートースト",
+          "scores": { "morning-switch": 2, "balance-master": 3, "stroll-refresher": 1 }
+        },
+        {
+          "text": "何もいらない、コーヒーだけ",
+          "scores": { "night-thinker": 3, "aroma-explorer": 2, "morning-switch": 1 }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "好きな天気は？",
+      "choices": [
+        {
+          "text": "快晴！青空が広がる日",
+          "scores": { "morning-switch": 3, "stroll-refresher": 2, "fruit-flash": 1 }
+        },
+        {
+          "text": "曇りの穏やかな日",
+          "scores": { "balance-master": 3, "sweet-afterglow": 2, "stroll-refresher": 1 }
+        },
+        {
+          "text": "雨の日。窓際でしっぽり",
+          "scores": { "night-thinker": 3, "aroma-explorer": 2, "sweet-afterglow": 1 }
+        },
+        {
+          "text": "夕焼けの時間帯",
+          "scores": { "bitter-reward": 3, "aroma-explorer": 1, "night-thinker": 2 }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "香りで選ぶなら？",
+      "choices": [
+        {
+          "text": "花束みたいな華やかな香り",
+          "scores": { "aroma-explorer": 3, "fruit-flash": 3, "sweet-afterglow": 1 }
+        },
+        {
+          "text": "焼きたてパンの香ばしさ",
+          "scores": { "morning-switch": 2, "balance-master": 3, "sweet-afterglow": 1 }
+        },
+        {
+          "text": "ダークチョコの深い香り",
+          "scores": { "bitter-reward": 3, "night-thinker": 3, "aroma-explorer": 1 }
+        },
+        {
+          "text": "森林浴のような爽やかさ",
+          "scores": { "stroll-refresher": 3, "morning-switch": 1, "aroma-explorer": 2 }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "コーヒーを飲むシチュエーションは？",
+      "choices": [
+        {
+          "text": "朝の支度をしながら",
+          "scores": { "morning-switch": 3, "balance-master": 2, "stroll-refresher": 1 }
+        },
+        {
+          "text": "仕事や作業の合間に",
+          "scores": { "bitter-reward": 2, "balance-master": 3, "morning-switch": 1 }
+        },
+        {
+          "text": "おやつタイムのお供に",
+          "scores": { "sweet-afterglow": 3, "fruit-flash": 2, "bitter-reward": 1 }
+        },
+        {
+          "text": "寝る前のリラックスタイム",
+          "scores": { "night-thinker": 3, "sweet-afterglow": 2, "aroma-explorer": 1 }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "あなたを動物にたとえると？",
+      "choices": [
+        {
+          "text": "猫（マイペース・気まぐれ）",
+          "scores": { "stroll-refresher": 3, "aroma-explorer": 2, "night-thinker": 1 }
+        },
+        {
+          "text": "犬（元気・忠実）",
+          "scores": { "morning-switch": 3, "balance-master": 2, "sweet-afterglow": 1 }
+        },
+        {
+          "text": "フクロウ（賢い・夜型）",
+          "scores": { "night-thinker": 3, "bitter-reward": 2, "aroma-explorer": 1 }
+        },
+        {
+          "text": "モモンガ（自由・好奇心旺盛）",
+          "scores": { "fruit-flash": 3, "aroma-explorer": 2, "stroll-refresher": 2 }
+        }
+      ]
+    }
+  ]
+}

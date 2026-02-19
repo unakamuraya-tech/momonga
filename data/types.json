@@ -1,0 +1,82 @@
+[
+  {
+    "id": "morning-switch",
+    "name": "朝スイッチ派",
+    "emoji": "⚡",
+    "description": "朝の一杯でスイッチオン。キレのある味わいで、一日を元気にスタートしたいタイプ。",
+    "personality": "行動派で、朝から全力。やると決めたら迷わない。",
+    "preference": { "acidity": 4, "bitterness": 2, "body": 2, "aroma": 3, "sweetness": 2 },
+    "recommendedBeanIds": ["kenya-aa", "ethiopia-yirgacheffe"],
+    "keywords": ["すっきり", "キレ", "朝"]
+  },
+  {
+    "id": "fruit-flash",
+    "name": "ひらめきフルーツ派",
+    "emoji": "🍋",
+    "description": "フルーティな香りにワクワクする。新しい発見が好きで、個性的な味に惹かれるタイプ。",
+    "personality": "好奇心旺盛で、いつも新しいものを探している。",
+    "preference": { "acidity": 5, "bitterness": 1, "body": 2, "aroma": 5, "sweetness": 4 },
+    "recommendedBeanIds": ["ethiopia-yirgacheffe", "kenya-aa"],
+    "keywords": ["フルーティ", "華やか", "ワクワク"]
+  },
+  {
+    "id": "bitter-reward",
+    "name": "ご褒美ビター派",
+    "emoji": "🍫",
+    "description": "チョコレートのような苦みと甘みが好き。頑張った自分にご褒美をあげたいタイプ。",
+    "personality": "努力家で、自分へのご褒美も大切にする。",
+    "preference": { "acidity": 2, "bitterness": 4, "body": 4, "aroma": 4, "sweetness": 3 },
+    "recommendedBeanIds": ["guatemala-antigua", "yozora-blend"],
+    "keywords": ["ビター", "ご褒美", "チョコ"]
+  },
+  {
+    "id": "sweet-afterglow",
+    "name": "甘い余韻派",
+    "emoji": "🍯",
+    "description": "やさしい甘みがじんわり残る味わいが好き。ほっとするひとときを大切にするタイプ。",
+    "personality": "やさしくて穏やか。周りの人を和ませる存在。",
+    "preference": { "acidity": 2, "bitterness": 2, "body": 3, "aroma": 3, "sweetness": 5 },
+    "recommendedBeanIds": ["brazil-santos", "momo-blend"],
+    "keywords": ["甘み", "やさしい", "ほっこり"]
+  },
+  {
+    "id": "aroma-explorer",
+    "name": "香りの冒険家",
+    "emoji": "🌿",
+    "description": "香りの豊かさに感動する。フレグランスのようにコーヒーの香りを楽しみたいタイプ。",
+    "personality": "感受性が豊かで、五感を大切にしている。",
+    "preference": { "acidity": 3, "bitterness": 2, "body": 2, "aroma": 5, "sweetness": 3 },
+    "recommendedBeanIds": ["ethiopia-yirgacheffe", "guatemala-antigua"],
+    "keywords": ["香り", "花", "スパイス"]
+  },
+  {
+    "id": "stroll-refresher",
+    "name": "すっきり散歩派",
+    "emoji": "🚶",
+    "description": "軽やかで後味すっきりが好き。散歩帰りにさらっと飲みたいタイプ。",
+    "personality": "マイペースで自然体。無理をしない生き方が好き。",
+    "preference": { "acidity": 3, "bitterness": 1, "body": 1, "aroma": 3, "sweetness": 3 },
+    "recommendedBeanIds": ["colombia-supremo", "momo-blend"],
+    "keywords": ["すっきり", "軽やか", "さらっと"]
+  },
+  {
+    "id": "night-thinker",
+    "name": "夜ふけの思考派",
+    "emoji": "🌙",
+    "description": "深煎りの濃い一杯でじっくり考えごと。夜の静けさの中でコーヒーを楽しむタイプ。",
+    "personality": "思慮深くて、ひとりの時間が好き。",
+    "preference": { "acidity": 1, "bitterness": 5, "body": 5, "aroma": 3, "sweetness": 2 },
+    "recommendedBeanIds": ["mandheling", "yozora-blend"],
+    "keywords": ["深煎り", "夜", "じっくり"]
+  },
+  {
+    "id": "balance-master",
+    "name": "バランスの達人",
+    "emoji": "⚖️",
+    "description": "どの味も偏りなく楽しみたい。ブレンドの妙技に惹かれる、コーヒー通タイプ。",
+    "personality": "調和を大切にする。周りとのバランスを自然に取れる人。",
+    "preference": { "acidity": 3, "bitterness": 3, "body": 3, "aroma": 3, "sweetness": 3 },
+    "recommendedBeanIds": ["momo-blend", "colombia-supremo"],
+    "keywords": ["バランス", "万能", "ブレンド"]
+  }
+]

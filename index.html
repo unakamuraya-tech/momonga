@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モモンガコーヒー | あなたにぴったりの一杯を</title>
+  <meta name="description" content="占い・ガチャ・おまかせの3つの方法で、あなたにぴったりのコーヒー豆を見つけよう。モモンガコーヒーの豆診断アプリ。">
+  <meta property="og:title" content="モモンガコーヒー | あなたにぴったりの一杯を">
+  <meta property="og:description" content="占い・ガチャ・おまかせの3つの方法で、あなたにぴったりのコーヒー豆を見つけよう。">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== トップ画面 ===== -->
+  <section id="screen-top" class="screen is-active">
+    <div class="top-container">
+      <div class="top-logo-area">
+        <img src="images/logo.png" alt="モモンガコーヒー" class="top-logo" onerror="this.style.display='none'">
+        <h1 class="top-title">モモンガコーヒー</h1>
+        <p class="top-subtitle">あなたにぴったりの一杯を見つけよう</p>
+      </div>
+      <div class="top-momonga-float" aria-hidden="true">🐿️</div>
+      <nav class="top-nav" aria-label="豆の選び方">
+        <button class="btn btn-primary btn-large" id="btn-diagnosis" aria-label="占いで選ぶ">
+          <span class="btn-emoji">☕</span>
+          <span class="btn-label">占いで選ぶ</span>
+          <span class="btn-desc">7つの質問であなたのタイプを診断</span>
+        </button>
+        <button class="btn btn-secondary" id="btn-gacha" aria-label="ガチャで選ぶ">
+          <span class="btn-emoji">🎲</span>
+          <span class="btn-label">ガチャで選ぶ</span>
+          <span class="btn-desc">運命の一杯をランダムに</span>
+        </button>
+        <button class="btn btn-secondary" id="btn-omakase" aria-label="店主におまかせ">
+          <span class="btn-emoji">🙏</span>
+          <span class="btn-label">店主におまかせ</span>
+          <span class="btn-desc">迷わなくて正解です</span>
+        </button>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== 占い診断画面 ===== -->
+  <section id="screen-diagnosis" class="screen">
+    <div class="diagnosis-container">
+      <div class="diagnosis-header">
+        <button class="btn-back" id="btn-diagnosis-back" aria-label="トップに戻る">← 戻る</button>
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="1">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="progress-text" id="progress-text">1 / 7</span>
+      </div>
+      <div class="diagnosis-card-area" id="diagnosis-card-area">
+        <!-- JS で質問カードを生成 -->
+      </div>
+      <div class="diagnosis-footer">
+        <button class="btn btn-ghost btn-small" id="btn-shortcut-omakase">もう任せる 🙏</button>
+        <button class="btn btn-ghost btn-small" id="btn-shortcut-gacha">ガチャへ 🎲</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 結果画面 ===== -->
+  <section id="screen-result" class="screen">
+    <div class="result-container">
+      <button class="btn-back" id="btn-result-back" aria-label="トップに戻る">← トップへ</button>
+      <div class="result-type-card" id="result-type-card">
+        <div class="result-type-emoji" id="result-type-emoji"></div>
+        <h2 class="result-type-name" id="result-type-name"></h2>
+        <p class="result-type-desc" id="result-type-desc"></p>
+        <p class="result-type-personality" id="result-type-personality"></p>
+      </div>
+      <div class="result-bean-card" id="result-bean-card">
+        <h3 class="result-bean-heading">☕ 今日のおすすめ</h3>
+        <div class="result-bean-name" id="result-bean-name"></div>
+        <div class="result-bean-roast" id="result-bean-roast"></div>
+        <div class="result-bean-desc" id="result-bean-desc"></div>
+        <div class="result-bean-flavors" id="result-bean-flavors"></div>
+        <div class="radar-chart-wrapper">
+          <canvas id="radar-chart-main" width="280" height="280" aria-label="味わいレーダーチャート"></canvas>
+        </div>
+        <a class="btn btn-purchase" id="btn-purchase-main" href="#" target="_blank" rel="noopener">
+          BASEで購入する →
+        </a>
+      </div>
+      <div class="result-alt-card" id="result-alt-card">
+        <h3 class="result-alt-heading">🔮 もう一つの提案</h3>
+        <div class="result-alt-name" id="result-alt-name"></div>
+        <div class="result-alt-desc" id="result-alt-desc"></div>
+        <a class="btn btn-ghost btn-small" id="btn-purchase-alt" href="#" target="_blank" rel="noopener">
+          こちらも見る →
+        </a>
+      </div>
+      <div class="result-blend-link" id="result-blend-link" style="display:none;">
+        <button class="btn btn-accent" id="btn-blend-detail">🔍 ブレンドの中身を見る</button>
+      </div>
+      <div class="result-actions">
+        <button class="btn btn-share" id="btn-share">📤 結果をシェア</button>
+        <button class="btn btn-ghost" id="btn-retry">もう一度診断する</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ブレンド分解画面 ===== -->
+  <section id="screen-blend" class="screen">
+    <div class="blend-container">
+      <button class="btn-back" id="btn-blend-back" aria-label="結果に戻る">← 結果に戻る</button>
+      <h2 class="blend-title" id="blend-title"></h2>
+      <p class="blend-concept" id="blend-concept"></p>
+      <div class="blend-components" id="blend-components">
+        <!-- JS で構成豆カードを生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ガチャ画面 ===== -->
+  <section id="screen-gacha" class="screen">
+    <div class="gacha-container">
+      <button class="btn-back" id="btn-gacha-back" aria-label="トップに戻る">← 戻る</button>
+      <div class="gacha-stage" id="gacha-stage">
+        <div class="gacha-momonga" id="gacha-momonga" aria-hidden="true">🐿️</div>
+        <div class="gacha-cup" id="gacha-cup">☕</div>
+        <p class="gacha-instruction">タップして運命の一杯を引こう！</p>
+        <button class="btn btn-primary btn-large" id="btn-gacha-pull">ガチャを回す！</button>
+      </div>
+      <div class="gacha-result" id="gacha-result" style="display:none;">
+        <div class="gacha-result-card">
+          <div class="gacha-result-name" id="gacha-result-name"></div>
+          <div class="gacha-result-roast" id="gacha-result-roast"></div>
+          <div class="gacha-result-comment" id="gacha-result-comment"></div>
+          <div class="radar-chart-wrapper">
+            <canvas id="radar-chart-gacha" width="280" height="280" aria-label="味わいレーダーチャート"></canvas>
+          </div>
+          <a class="btn btn-purchase" id="btn-purchase-gacha" href="#" target="_blank" rel="noopener">
+            BASEで購入する →
+          </a>
+        </div>
+        <div class="gacha-actions">
+          <button class="btn btn-accent" id="btn-gacha-again">🎲 もう一回！</button>
+          <button class="btn btn-ghost" id="btn-gacha-to-top">トップに戻る</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== トースト ===== -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="js/radar-chart.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/diagnosis.js"></script>
+  <script src="js/result.js"></script>
+  <script src="js/gacha.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+[
+  {
+    "id": "ethiopia-yirgacheffe",
+    "name": "エチオピア イルガチェフェ",
+    "type": "single",
+    "origin": "エチオピア",
+    "roast": "light",
+    "roastLabel": "浅煎り",
+    "flavorNotes": ["フローラル", "レモン", "紅茶"],
+    "description": "華やかな花の香りとレモンのような爽やかな酸味。飲んだ瞬間、お花畑にいるような気持ちに。",
+    "shortComment": "今日のあなたには、華やかな一杯を ☕✨",
+    "scores": {
+      "acidity": 5,
+      "bitterness": 1,
+      "body": 2,
+      "aroma": 5,
+      "sweetness": 4
+    },
+    "tags": {
+      "aroma": ["花っぽい", "フルーティ"],
+      "usage": ["朝", "休日のご褒美"],
+      "foodPairing": ["フルーツ"]
+    },
+    "baseUrl": "",
+    "image": "ethiopia.jpg",
+    "featured": false
+  },
+  {
+    "id": "brazil-santos",
+    "name": "ブラジル サントス",
+    "type": "single",
+    "origin": "ブラジル",
+    "roast": "medium",
+    "roastLabel": "中煎り",
+    "flavorNotes": ["ナッツ", "チョコレート", "キャラメル"],
+    "description": "やさしい甘みとナッツの香ばしさ。毎日飲んでも飽きない、安心感のある味わい。",
+    "shortComment": "ホッとしたい日に、やさしいナッツの甘み 🥜",
+    "scores": {
+      "acidity": 2,
+      "bitterness": 2,
+      "body": 3,
+      "aroma": 3,
+      "sweetness": 5
+    },
+    "tags": {
+      "aroma": ["香ばしい", "甘い"],
+      "usage": ["朝", "昼"],
+      "foodPairing": ["トースト", "ナッツ系"]
+    },
+    "baseUrl": "",
+    "image": "brazil.jpg",
+    "featured": false
+  },
+  {
+    "id": "colombia-supremo",
+    "name": "コロンビア スプレモ",
+    "type": "single",
+    "origin": "コロンビア",
+    "roast": "medium",
+    "roastLabel": "中煎り",
+    "flavorNotes": ["キャラメル", "オレンジ", "バランス"],
+    "description": "甘み・酸味・コクのバランスが絶妙。コーヒーの教科書みたいな一杯。",
+    "shortComment": "迷ったらこれ。バランスの王道コロンビア 👑",
+    "scores": {
+      "acidity": 3,
+      "bitterness": 3,
+      "body": 3,
+      "aroma": 3,
+      "sweetness": 4
+    },
+    "tags": {
+      "aroma": ["バランス"],
+      "usage": ["いつでも"],
+      "foodPairing": ["チョコ", "ケーキ"]
+    },
+    "baseUrl": "",
+    "image": "colombia.jpg",
+    "featured": false
+  },
+  {
+    "id": "guatemala-antigua",
+    "name": "グアテマラ アンティグア",
+    "type": "single",
+    "origin": "グアテマラ",
+    "roast": "medium-dark",
+    "roastLabel": "中深煎り",
+    "flavorNotes": ["カカオ", "スパイス", "ベリー"],
+    "description": "チョコレートのようなコクと、スパイシーな余韻。ちょっと大人な味わい。",
+    "shortComment": "大人のご褒美タイムに、カカオの深み 🍫",
+    "scores": {
+      "acidity": 2,
+      "bitterness": 4,
+      "body": 4,
+      "aroma": 4,
+      "sweetness": 3
+    },
+    "tags": {
+      "aroma": ["チョコっぽい", "スパイシー"],
+      "usage": ["午後", "夜"],
+      "foodPairing": ["チョコ", "ケーキ"]
+    },
+    "baseUrl": "",
+    "image": "guatemala.jpg",
+    "featured": false
+  },
+  {
+    "id": "kenya-aa",
+    "name": "ケニア AA",
+    "type": "single",
+    "origin": "ケニア",
+    "roast": "medium",
+    "roastLabel": "中煎り",
+    "flavorNotes": ["カシス", "トマト", "キレ"],
+    "description": "鮮烈なベリーの酸味とキレのある後味。目が覚めるような力強さ。",
+    "shortComment": "シャキッとしたい朝に、キレのある一杯 ⚡",
+    "scores": {
+      "acidity": 5,
+      "bitterness": 2,
+      "body": 3,
+      "aroma": 4,
+      "sweetness": 2
+    },
+    "tags": {
+      "aroma": ["フルーティ", "キレ"],
+      "usage": ["朝", "仕事中"],
+      "foodPairing": ["フルーツ", "ヨーグルト"]
+    },
+    "baseUrl": "",
+    "image": "kenya.jpg",
+    "featured": false
+  },
+  {
+    "id": "mandheling",
+    "name": "マンデリン",
+    "type": "single",
+    "origin": "インドネシア",
+    "roast": "dark",
+    "roastLabel": "深煎り",
+    "flavorNotes": ["ダークチョコ", "ハーブ", "どっしり"],
+    "description": "どっしりとした苦みと深いコク。静かな夜にじっくり味わいたい一杯。",
+    "shortComment": "夜ふけの思考のお供に、深い苦みを 🌙",
+    "scores": {
+      "acidity": 1,
+      "bitterness": 5,
+      "body": 5,
+      "aroma": 3,
+      "sweetness": 2
+    },
+    "tags": {
+      "aroma": ["苦み", "重厚"],
+      "usage": ["夜", "読書中"],
+      "foodPairing": ["ダークチョコ", "チーズ"]
+    },
+    "baseUrl": "",
+    "image": "mandheling.jpg",
+    "featured": false
+  },
+  {
+    "id": "momo-blend",
+    "name": "モモブレンド",
+    "type": "blend",
+    "roast": "medium",
+    "roastLabel": "中煎り",
+    "flavorNotes": ["バランス", "ナッツ", "チョコ"],
+    "description": "毎日飲みたくなるバランスの良さ。モモンガコーヒーの看板ブレンド。",
+    "shortComment": "迷ったらモモブレンド。これぞ看板の味 🐿️",
+    "scores": {
+      "acidity": 3,
+      "bitterness": 3,
+      "body": 3,
+      "aroma": 3,
+      "sweetness": 3
+    },
+    "blend": {
+      "components": [
+        { "beanId": "brazil-santos", "role": "甘み担当", "ratio": 40 },
+        { "beanId": "colombia-supremo", "role": "バランス担当", "ratio": 35 },
+        { "beanId": "ethiopia-yirgacheffe", "role": "余韻担当", "ratio": 25 }
+      ],
+      "concept": "毎日の一杯に寄り添うバランスブレンド"
+    },
+    "tags": {
+      "aroma": ["香ばしい"],
+      "usage": ["朝", "昼"],
+      "foodPairing": ["トースト", "ナッツ系"]
+    },
+    "baseUrl": "",
+    "image": "momo-blend.jpg",
+    "featured": true
+  },
+  {
+    "id": "yozora-blend",
+    "name": "夜空ブレンド",
+    "type": "blend",
+    "roast": "medium-dark",
+    "roastLabel": "中深煎り",
+    "flavorNotes": ["ビター", "カカオ", "スモーキー"],
+    "description": "夜空を見上げながら飲みたい、深みのあるブレンド。甘いお菓子との相性抜群。",
+    "shortComment": "夜のリラックスタイムに、ビターな深み 🌌",
+    "scores": {
+      "acidity": 1,
+      "bitterness": 4,
+      "body": 4,
+      "aroma": 4,
+      "sweetness": 3
+    },
+    "blend": {
+      "components": [
+        { "beanId": "mandheling", "role": "苦みの骨格", "ratio": 45 },
+        { "beanId": "guatemala-antigua", "role": "コクと深み", "ratio": 35 },
+        { "beanId": "brazil-santos", "role": "甘みの土台", "ratio": 20 }
+      ],
+      "concept": "夜にそっと寄り添う深煎りブレンド"
+    },
+    "tags": {
+      "aroma": ["ビター", "重厚"],
+      "usage": ["夜", "デザートタイム"],
+      "foodPairing": ["チョコケーキ", "チーズケーキ"]
+    },
+    "baseUrl": "",
+    "image": "yozora-blend.jpg",
+    "featured": false
+  }
+]
