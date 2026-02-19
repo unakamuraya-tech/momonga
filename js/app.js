@@ -11,6 +11,42 @@ const App = (() => {
     loaded: false,
   };
 
+  // ===== Background Momonga =====
+  function spawnBgMomonga() {
+    const layer = document.getElementById('bg-momonga-layer');
+    if (!layer) return;
+    // prefers-reduced-motion チェック
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const configs = [
+      { size: 40, duration: 18, delay: 0,  startY: '20vh', endY: '10vh', opacity: 0.05 },
+      { size: 56, duration: 22, delay: 4,  startY: '60vh', endY: '30vh', opacity: 0.07 },
+      { size: 36, duration: 15, delay: 8,  startY: '75vh', endY: '50vh', opacity: 0.06 },
+      { size: 48, duration: 25, delay: 12, startY: '40vh', endY: '15vh', opacity: 0.055 },
+      { size: 32, duration: 20, delay: 16, startY: '85vh', endY: '65vh', opacity: 0.045 },
+    ];
+
+    configs.forEach(cfg => {
+      const img = document.createElement('img');
+      img.src = 'images/アセット 1@2x.png';
+      img.alt = '';
+      img.className = 'bg-momonga';
+      img.style.cssText = `
+        --momo-size: ${cfg.size}px;
+        --momo-duration: ${cfg.duration}s;
+        --momo-delay: ${cfg.delay}s;
+        --momo-start-x: -60px;
+        --momo-start-y: ${cfg.startY};
+        --momo-end-x: calc(100vw + 60px);
+        --momo-end-y: ${cfg.endY};
+        --momo-opacity: ${cfg.opacity};
+        --momo-rot-start: ${-10 - Math.random() * 20}deg;
+        --momo-rot-end: ${10 + Math.random() * 20}deg;
+      `;
+      layer.appendChild(img);
+    });
+  }
+
   // ===== Data Loading =====
   async function loadData() {
     try {
@@ -139,6 +175,9 @@ const App = (() => {
   async function init() {
     await loadData();
     if (!state.loaded) return;
+
+    // 背景モモンガ演出
+    spawnBgMomonga();
 
     // Top screen buttons
     document.getElementById('btn-diagnosis').addEventListener('click', () => {

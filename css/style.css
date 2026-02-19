@@ -51,6 +51,42 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== Background Momonga Layer ===== */
+.bg-momonga-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-momonga {
+  position: absolute;
+  width: var(--momo-size, 32px);
+  height: auto;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: momongaFly var(--momo-duration, 12s) var(--momo-delay, 0s) linear infinite;
+}
+
+@keyframes momongaFly {
+  0% {
+    transform: translate(var(--momo-start-x, -50px), var(--momo-start-y, 50vh)) rotate(var(--momo-rot-start, -15deg)) scale(0.6);
+    opacity: 0;
+  }
+  10% { opacity: var(--momo-opacity, 0.06); }
+  80% { opacity: var(--momo-opacity, 0.06); }
+  100% {
+    transform: translate(var(--momo-end-x, 110vw), var(--momo-end-y, 20vh)) rotate(var(--momo-rot-end, 15deg)) scale(1);
+    opacity: 0;
+  }
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== Screen Management ===== */
 .screen {
   display: none;
