@@ -204,8 +204,21 @@ body {
 }
 
 .top-momonga-float {
-  font-size: 2.5rem;
   animation: momongaFloat 3s ease-in-out infinite;
+}
+
+.momonga-silhouette {
+  width: 80px;
+  height: auto;
+  opacity: 0.7;
+  filter: drop-shadow(0 4px 8px rgba(79, 184, 224, 0.3));
+}
+
+.momonga-silhouette-gacha {
+  width: 120px;
+  height: auto;
+  opacity: 0.8;
+  filter: drop-shadow(0 4px 12px rgba(79, 184, 224, 0.4));
 }
 
 @keyframes momongaFloat {
